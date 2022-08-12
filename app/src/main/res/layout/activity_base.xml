@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:adjustViewBounds="true"
+    android:scaleType="centerCrop"
+    android:background="@drawable/fondo_base"
+    android:layout_height="match_parent">
+
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/fondo_edificio"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="140dp"
+        app:layout_constraintBottom_toBottomOf="@+id/icono_pokemon"
+        app:layout_constraintTop_toBottomOf="@+id/emocion"
+        app:radius="0dp"
+        app:slideInterval="0"
+        app:indicatorVisibility="invisible"
+        app:strokeWidth="1dp" />
+
+    <ImageView
+        android:id="@+id/emocion"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/icono_pokemon"
+        app:layout_constraintEnd_toEndOf="@+id/icono_pokemon"
+        app:layout_constraintStart_toStartOf="@+id/icono_pokemon" />
+
+    <ImageView
+        android:id="@+id/icono_pokemon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/p_desconocido"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/boton_atras_mochila"
+        android:layout_width="@dimen/buttons_size"
+        android:layout_height="@dimen/buttons_size"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/button_bg"
+        android:elevation="8dp"
+        android:src="@drawable/ic_prev"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fondo_edificio" />
+
+    <ImageView
+        android:id="@+id/boton_siguiente"
+        android:layout_width="@dimen/buttons_size"
+        android:layout_height="@dimen/buttons_size"
+        android:layout_margin="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_bg"
+        android:elevation="8dp"
+        android:src="@drawable/ic_next"
+        app:layout_constraintEnd_toEndOf="@+id/fondo_edificio"
+        app:layout_constraintTop_toBottomOf="@+id/fondo_edificio" />
+
+    <ImageView
+        android:id="@+id/boton_aceptar"
+        android:layout_width="@dimen/buttons_size"
+        android:layout_height="@dimen/buttons_size"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_bg"
+        android:elevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icono_pokemon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

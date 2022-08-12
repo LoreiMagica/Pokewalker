@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b4b6ac"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/pasosDados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/bioma_fondo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/bioma_fondo"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:src="@drawable/bioma_bosque"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/emocion"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/icono_pokemon"
+        app:layout_constraintEnd_toEndOf="@+id/icono_pokemon"
+        app:layout_constraintStart_toStartOf="@+id/icono_pokemon" />
+
+    <ImageView
+        android:id="@+id/icono_pokemon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/p_desconocido"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/boton_atras"
+        android:layout_width="@dimen/buttons_size"
+        android:layout_height="@dimen/buttons_size"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/button_bg"
+        android:elevation="8dp"
+        android:src="@drawable/ic_prev"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icono_pokemon" />
+
+    <ImageView
+        android:id="@+id/boton_combate"
+        android:layout_width="@dimen/buttons_size"
+        android:layout_height="@dimen/buttons_size"
+        android:layout_margin="8dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_bg"
+        android:elevation="8dp"
+        android:src="@drawable/objeto_pokeradar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icono_pokemon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

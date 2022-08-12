@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fondo_objeto_tienda"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imagenObjeto"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/p_desconocido" />
+
+            <TextView
+                android:id="@+id/nombreObjeto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/imagenObjeto"
+                android:maxLines="2"
+                android:text="caca"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/icono_Dinero"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/nombreObjeto"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/imagenObjeto"
+                android:layout_toRightOf="@+id/imagenObjeto"
+                android:src="@drawable/ic_dinero" />
+
+            <TextView
+                android:id="@+id/precioNumero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/icono_Dinero"
+                android:layout_alignBottom="@+id/icono_Dinero"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@+id/icono_Dinero"
+                android:text="0" />
+
+
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
